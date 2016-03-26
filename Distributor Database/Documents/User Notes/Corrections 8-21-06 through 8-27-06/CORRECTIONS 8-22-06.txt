@@ -1,0 +1,28 @@
+BUGS / CORRECTIONS:
+===================================
+Switch Contract and Modified under Contract Information. I want to be able to choose the CONTRACT DATE and the MODIFIED DATE is the date the computer chooses when the contract was updated or maintained. (Contract.tif)
+
+Under Distributor window(s) EMAIL: needs to be setup like CONTACT: We need a name: and email:. Currently there is just a spot for multiple email addresses. (Refer to previous emails - distrib_info.tif)
+
+Service Rep & Territory Rep:
+   When you select another rep in place of one the can prompt ask "Are you sure you want to change Rep?" (rep.tif)
+
+   This message happens quite a bit. (rep_bug.tif). I think it has to do with not being able to assign T-Reps or S-Rep to multple Sales locations within a Main distributor. I say that only because when you create  the 1st sales office all works fine. But when you create another the second you hit the T-Rep button or S-Rep button this message appears (rep_bug.tif). Also sometimes if you can get past this problem when you select the proper rep and hit the back button, it goes back to a blank "Sales" add location form. I would give you better detail but I'm not exactly sure what causes this problem (rep_bug.tif)
+
+   When you remove a S-Rep or T-Rep while in the assign mode the functionality is correct. Please correct window verbage. It should say "This representative is assigned to one or more distributors. Would you like to reassign another representative to the distributor(s)?" (rep1.tif). This functionality needs to be added to "Main Distributor List/Territory Rep List  and Main Distributor List/Service Rep List". Currently on this window when you "Delete" a rep you get this "Removal Successful". (rep2.tif). The problem becomes that if you remove a current rep from this window you do not have a choice to re-assign.
+
+I'm not sure what happened to it but I need the ability to edit counties. (counties.tif)  We have one exception to all of our contracts that does not look like it will go away. Jackson county FL is split by a street (Rte 90) So I need to add/edit the list to say Jackson (North Rt 90) and Jackson (South Rt 90). I don't know if this will happen again in the future (I hope not) but having the abilty to edit/update/remove counties is nessary.
+
+===================================
+NEED TO IMPLEMENT STILL:
+===================================
+
+When choosing a county that has been grayed out can it tell you the contract number and distributor associated with it. (county.tif) I mentioned this in an earlier corrections email.
+
+Need to implement removal of application users (users.tif)
+
+
+===================================
+NEEDS TO BE ADDED (CHARGE IF NEEDED):
+===================================
+BACK UP DATABASE -  may with restore functionality. Not sure on this. I just want some safety net when data is all in place. Lets talk about this tomorrow.

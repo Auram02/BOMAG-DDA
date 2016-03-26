@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DDA.Resources.resources
+obj\Debug\DDA.vbproj.GenerateResource.Cache
+bin\Debug\DDA.dll
+bin\Debug\DDA.pdb
+bin\Debug\DDA.xml
+obj\Debug\DDA.dll
+obj\Debug\DDA.xml
+obj\Debug\DDA.pdb

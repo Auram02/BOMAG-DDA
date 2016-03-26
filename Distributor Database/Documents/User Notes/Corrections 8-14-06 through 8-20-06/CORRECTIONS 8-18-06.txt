@@ -1,0 +1,45 @@
+BUGS / CORRECTIONS:
+
+Please change all instances of "Billing Address" to "Mailing Address"including Sales (Branch) windows. (distrib_info.tif)
+
+Please change "Territory" window (Territory1.tif) into (Territory2.tif) by adding "Distributor" for clarification.
+----------------------------------
+On Final contract view:
+
+Move "Contract Information" to top of window if possible (contract1.tif)
+
+Add "Print" Button to contract window. This can be one of the reports. I just want the exact information displayed in this window to print a useable and readable format. No more detail is needed. (contract_final.tif)
+
+Re-arrange window (contract2.tif) to (contract_final.tif)
+
+Change "Creation Date" to "CONTRACT DATE" (contract_final.tif)
+
+Modify "Counties" window to display state also (contract3.tif)
+----------------------------------
+
+Please change all "Main Menu" buttons, except "Main Distributor List" window, to "Main List" and change links to go to Main Distributor List. (main_menu_button1.tif, main_menu_button2.tif). Example of work flow (main_list_example.pdf). All "Main List" buttons will go to Main Distributor List window. There will only be 1 "Main Menu" button and it will be on the "Main Distributor List window".
+
+
+
+NEED TO IMPLEMENT STILL:
+
+Need a way to "Update" Catagories not just  "Add" or "Delete" (category1.tif, category2.tif)
+
+--------------------------------------
+Please add these Actual Product Catagories: 
+HYPAC HEAVY COMPACTION
+BOMAG HEAVY COMPACTION
+RECYCLING/SOIL STABILIZATION
+LANDFILL
+PAVING
+MILLING
+--------------------------------------
+
+
+NEEDS TO BE ADDED (CHARGE IF NEEDED):
+
+Can we add the T-Rep and the S-Rep buttons to the Main Distributor List Window. (s-rep.tif) Then if you click on the T-Rep or S-Rep link from the Main Distributor List window the association boxes are hidden just the edit and delete buttons are shown. (s-rep2.tif)
+
+When navigating this way: Main Distributor List / Distributor Information/ Branch Distributor List, please hide the "Save" button from the "Branch Distributor List" window (branch_list.tif). Keep the "Save" button when navigating this way: Main Distributor List / Territory / Counties/ Branch Distributor List
+
+When navigating this way: Main Distributor List / Territory, please hide the "Back" button from the "Territory" window (back2.tif). When navigating this way: Main Distributor List / Distributor Information/ Territory, please keep the "Back" button in "Territory" window (back.tif).

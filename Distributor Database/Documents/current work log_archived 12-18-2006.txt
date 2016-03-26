@@ -1,0 +1,471 @@
+***************************
+* OUTSTANDING ISSUES
+* OUTSTANDING ISSUES
+* OUTSTANDING ISSUES
+***************************
+##########################
+# BUGS / CORRECTIONS:    #
+##########################
+
+We ran into an issue while checking off counties that a few were missing (My fault). However because of the placement of 
+"Edit Counties" button, Laurie didn't save the contract she was working on and pressed "Main List" button, added county and 
+then started the contract over. She did this 5 times until she called me and said she ask for work around. I told her to 
+check the counties and save the contract. Then add the new counties and then modify the contract to check the newly added 
+counties. The work around is fine but I would prefer if possible to change the location of the "Edit Counties" button. This 
+way as she is adding contracts if a county is not listed in the county window she can press the button, add it, save. The 
+"Edit County List" Window should have "Close" button instead of  "Main List" button and it should go back to the window where 
+you can check off counties. (Remove.tif and Add.tif)
+***DONE
+
+
+When you intially add a contract and you get to the last window "Contract Information" window we need to remove the "Print" 
+and "Print Labels" button and just keep the "Main List" "Back" and "Save" buttons. However, when we view a contract we need the 
+"Print" and "Print Labels" Button. REASON: We found that when Laurie would get to the last window on a new contract if she used 
+the print button that the CREATION DATE would be TODAYS date. If she would save first than the screen would automatically take you 
+back to the "Territory" window. At that point she would select the contract and view it. When she printed the CREATION DATE was correct. 
+(Save.tif)
+***DONE
+
+Is it possible that when she click the "Print" button that it will print without further options. 
+Currently you click print - than a window - the select printer - than print -than close. The output is exactly what we want 
+(Except the 2 blank Page). So is it possible to speed the process and just use the "Default Printer", generate the report 
+behind the scenes and just output that report? As far as the "Print Label" button we need it to always use the Label printer 
+and just print the information I supplied to you about the 4 lines of text on the label in like Arial or something.
+
+
+Allow Add/Update/Delete of states
+***DONE
+
+CONFIRM THAT THE SETUP WILL NOT OVERWRITE THE database
+***DONE
+
+Counties with the same name but a different state are incorrectly reporting that they are already associated with another contract 
+that has the same categories
+***DONE
+
+This biggest problem is that the report is cached rather
+than generated each time. If changes are made the application is updated
+and reflected however the report just adds changes instead of
+re-generating. I tried the refresh button available but it did not work.
+(cache_not_cleared.tif)
+***DONE
+
+Need change "Main List" button to say "Close" and link back
+to "Contract Information" window. We also need to disable the [X].
+(close.tif)
+***DONE
+
+Need to extend the column so we can read the information.
+Also is it possible in each category (example: Sales Location:) to list
+the information Horizontally and wrap to the next line if necessary and
+separated by a triple space or a space -- and space or some type of
+delimiter (extend.tif, horiz_spac.tif).
+***DONE
+
+Copy New database into deployment folder
+***DONE
+
+Please remove RepID from window. (s-rep.tif)
+***DONE
+
+If no phone is within information window the email address or physical address will appear in the phone column of the T-Rep / S-Rep and Sales Locations list windows. (t-rep_s-rep.tif, distrib_list.tif)
+***DONE
+
+*** MAJOR BUG**** None of the states have counties to check off - no counties list. (county_table.tif)
+***DONE
+
+Mobile Phone numbers within the T-Rep and S-Rep windows do not need "Ext:" information
+***DONE
+
+Please make it so the the State field can not be typed into just selected. Is this possible? When I tab to the field it highlights 
+but I thought I could select through them however it took what I typed and would ultimately give me an error if typed incorrectly.
+***DONE --> Custom Control created to allow typing into combobox and then AUto-Complete
+
+Tabs -  Can you make sure that tabing through the windows goes to each field consecutively. Currently, the tab goes all over 
+the place depending which field your on. I need this to work to increase productivity when entering data.
+***DONE
+
+When loging on please automatically highlight login button so when pressing "Enter" on the keyboard the button is pushed. 
+It seems small but it is gets very irritating to always use the mouse to press the login button.
+***DONE
+
+When Removing main distributors it always takes you back to "Main Menu" instead of "Main List"
+***DONE
+
+Main Distributo Info and Sales Info screens are two long, they go past my Windows Start Bar. Is there a way to shorten or can we 
+re-arrange with some horizontal elements?
+***DONE
+
+Login Screen - you can't use [x] or cancel button to quit the app. This needs to work incase someone accidentally clicks on shortcut
+***DONE
+
+Shortcut - needs to have the logo icon we created.
+***DONE
+
+
+When I go through, edit a contract and get to the last window (Distributor Sales Location List) and save the data I get 
+these errors (contract1.tif, contract2.tif)
+***DONE
+
+
+===Distributor Info and Sales Window===
+(Distributor Window Only) Please switch positions of the NODE and SAP. NODE should come first than SAP. I noticed this when entering 
+in actually data.
+***DONE
+
+
+
+I know I never asked for this before and if it is way to much trouble than don't do it. Can you mask all phone and fax 
+fields to - * (***) ***-*****. I just want to have the proper data entered in uniformly.'
+***DONE
+
+
+
+Email Name field. Can you clear this when you press the "Add" Button. Currently the Name and Title field does this when pressing 
+the "Add" button.
+***DONE
+
+
+***BUG*** - First enter all data including selecting a state in the State Field and save data. Now edit the Distibutor information 
+and notice that the STATE field is set back to ALABAMA. It is not holding the selection. Same happens for the Sales Information window.
+***DONE
+
+
+***BUG*** -  If you add a name/title or name/email and double click it. Then remove the name/title or name/email and click the update 
+button an error occurs. (name-tile.tif, name-email.tif) Since you can get past this error you must force quite the app and restart.
+***DONE
+
+***BUG*** -  After saving the data, I pressed the save button again just for kicks. In the past it has saved the data twice and it 
+showed up twice in the main list. That was a bug but I think that bug was replaced by the this one - (save_twice.tif)
+***DONE
+
+
+Service / Territory Rep List:
+Navigation: Main List / Distributor Info / Sales Location List / Sales Location info / T-Rep List --> Pleaser remove RepID 
+column and move over  "Delete" button field - (t-rep_list.tif). This is the same for the Service Rep List.
+***DONE
+
+
+==ADD CATAGORY WINDOW===
+When ever I try to remove Neil's catagory I get these errors (neil1.tif, neil2.tif). 
+I can't even rename or update Neil's Catagory (neil3.tif)
+Once all is removed (Except Neil) I can't add new catagories. (neil4.tif)
+***DONE
+
+
+
+##########################
+# Charge if Needed Items #
+##########################
+
+
+
+##########################
+#NEED TO IMPLEMENT STILL #
+##########################
+
+
+
+
+--------------------------------------
+Please add these Actual Product Catagories: 
+HYPAC HEAVY COMPACTION
+BOMAG HEAVY COMPACTION
+RECYCLING/SOIL STABILIZATION
+LANDFILL
+PAVING
+MILLING
+--------------------------------------
+
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+***************************
+* Closed/Fixed/Finished Items
+* Closed/Fixed/Finished Items
+* Closed/Fixed/Finished Items
+***************************
+##########################
+# BUGS / CORRECTIONS:    #
+##########################
+1) View Contract button not working (view_button.tif)
+***FIXED
+
+3) What does the green square in the check box mean? (green_box.tif)
+***This is the same as "Has been assigned to another distributor".  The control that has a list of checkboxes versus checkboxes in a column 
+of a datagrid have different icons for this unfortunately.  It is out of my control.
+
+4) Noticed that when you double click a field within Main Distributor List the field becomes editable. This can not happen, editing should only take place using the Edit button within the "Distributor Information" window. (main_distributor_edit.tif)
+***FIXED
+
+5) I removed all categories and added my own two new ones. Once I selected a contract, chose a new categorie and pressed next 
+I get invalid Query! window (invalid query.tif)
+***FIXED
+	--- Was due to incorrect trapping of the single quote
+
+
+6) You can not assciate more than 1 T-Rep or more than 1 S-Rep to a branch location. You can not have multiple boxes checked
+(T-Rep1.tif is incorrect) However you can associate more than 1 branch location to a  T-Rep or S-rep (T-Rep2.tif is also incorrect)
+***FIXED
+
+
+7) When adding a branch to branch listing the Branch Name will always be the same as Main Distributor just different location. 
+So Distributor Name within Branch Information window should only display Main Distributor name and not be editable.  (Branch1.tif)
+***FIXED
+
+
+8) Please remove  "Distributor ID" and "Branch Name" Field from Distributor List. Replace with Branch Address Field. 
+Add Main Distibutor Name Below "BRANCH DISTRIBUTOR LIST" Heading (branch_list.tif).  The reasoning for this is because 
+a branch can not have a different name than the Main Distributor. So putting the Name under the BRANCH DISTRIBUTOR LIST would 
+indicate all the branches associated with the main Distributor
+***FIXED
+
+
+9) Remove NODE: from branch information Window. (Branch2.tif)
+***FIXED
+	-- NOTE: The fields were simply made invisible
+
+
+
+10) Creation Date label and Modified Date label should be switched (date.tif)
+***FIXED
+
+11) Go to T-REP or S-Rep information Window. The problem is that the State does not have a list and you have to type it in. Since it is the State Table, if you type the state incorrectly or not at all you receive the following error (adding_T-Rep.tif)
+***FIXED
+
+
+12) Under Counties Window. Select all or Deselect all does not pompt you if a check box is greyed out. However if you select the grayed out box by itself than a prompt. (single.tif, select.tif, deselect.tif).
+Also if no counties are selected (deselect.tif) and you press the "Next" button and then try "Save" button and error message occurs(no_counties_selected.tif)
+***FIXED
+
+
+13) There will never be more the 1 main distributor to a contract. So you can delete extra space in the Contract Window. (contract_info_window.tif)
+***FIXED
+
+
+14) Go to BRANCH INFORMATION window or DISTRIBUTOR INFORMATION window. If you double click contact to update information, then  remove all information in the list box  while in Update Mode, then click update the resulting error occures. (contact_error.tif)
+***FIXED
+
+
+16) Make password field have * mask
+***FIXED
+
+17) Tab order on login screen
+***FIXED
+
+18) What type of image will show transparency??
+***PNG's work with a bit of a workaround.
+***Fixed
+
+19) Cancel on the Login screen does not exit application
+***FIXED
+
+20) Clear out contact / title on dist. info screen when updating / adding
+***FIXED
+
+
+23) Move "Contract Information" to top of window if possible (contract1.tif)
+***DONE
+
+
+25) Management for "users"
+***DONE
+
+Service Rep & Territory Rep:
+28)   When you select another rep in place of one the can prompt ask "Are you sure you want to change Rep?" (rep.tif)
+***DONE
+
+29)   This message happens quite a bit. (rep_bug.tif). I think it has to do with not being able to assign T-Reps or S-Rep to multple Sales locations within a Main distributor. 
+I say that only because when you create  the 1st sales office all works fine. But when you create another the second you hit 
+the T-Rep button or S-Rep button this message appears (rep_bug.tif). Also sometimes if you can get past this problem when you 
+select the proper rep and hit the back button, it goes back to a blank "Sales" add location form. I would give you better 
+detail but I'm not exactly sure what causes this problem (rep_bug.tif)
+***DONE
+
+
+30)   When you remove a S-Rep or T-Rep while in the assign mode the functionality is correct. Please correct window verbage. 
+It should say "This representative is assigned to one or more distributors. Would you like to reassign another representative 
+to the distributor(s)?" (rep1.tif). This functionality needs to be added to "Main Distributor List/Territory Rep List  and Main 
+Distributor List/Service Rep List". Currently on this window when you "Delete" a rep you get this "Removal Successful". (rep2.tif). 
+The problem becomes that if you remove a current rep from this window you do not have a choice to re-assign.
+***DONE
+
+32) Need to implement removal of application users (users.tif)
+***DONE
+
+2) Delete Buttons not working (delete_button.tif)
+***ONLY Distributor and Branch no longer deleting
+***DONE
+
+
+On Final contract view:
+24) Add "Print" Button to contract window. This can be one of the reports. I just want the exact information displayed in this window to print a useable and readable format. No more detail is needed. (contract_final.tif)
+***PARTIALLY DONE, not complete.
+
+
+26) Switch Contract and Modified under Contract Information. I want to be able to choose the CONTRACT DATE 
+and the MODIFIED DATE is the date the computer chooses when the contract was updated or maintained. (Contract.tif)
+***DONE
+
+31) I'm not sure what happened to it but I need the ability to edit counties. (counties.tif)  We have one exception to all 
+of our contracts that does not look like it will go away. Jackson county FL is split by a street (Rte 90) So I need to add/edit 
+the list to say Jackson (North Rt 90) and Jackson (South Rt 90). I don't know if this will happen again in the future (I hope not)
+ but having the abilty to edit/update/remove counties is nessary.
+***DONE
+
+33) When choosing a county that has been grayed out can it tell you the contract number and distributor associated with it.
+ (county.tif) I mentioned this in an earlier corrections email.
+***DONE
+
+34) The first login screen does not allow a user to exit application from either the "Cancel" button or the [x] button.
+***DONE
+
+35) Main Distibutor list -->Choose any distibutor and Territory Button -->pick a contract or new anc choose categories 
+and state -->Choose any county available --> Now add a location --> Fill out form and save --> now choose T-Rep or S-Rep. 
+The problem is there is no back button just main list so you can finish modifing the contract.
+***DONE
+
+
+36) Sales location window if you don't fill in Zip code you get this error. (sales_location.tif)
+***DONE
+
+
+
+
+##########################
+#NEED TO IMPLEMENT STILL #
+##########################
+
+1) How do you delete a contract? After clicking the view button?
+--> See #2 in Bugs/Corrections
+***DONE
+
+3) When choosing a county that has been grayed out can it tell you the contract number and distributor associated with it. (county.tif)
+Need a way to "Update" Catagories not just  "Add" or "Delete" (category1.tif, category2.tif)
+***DONE
+
+4) The county/Product are not working. Example: I created a new distributor and branch (timages1.tif). Then I created a new contract and selected "Compactors" and state "Illinios" (timages2.tif). Next I selected all of the state counties and saved the contract (timages3.tif). Then I choose Anderson Equipment and created a new contract. I selected "Compactors" and state "Illinois" (timages4.tif). Then in the next screen all items should be check but they were all open (timages5.tif). They should have been all checked because one of timages contracts associated the whole state of IL with "Compactors"
+***FIXED
+
+
+############################################
+NEEDS TO BE ADDED (CHARGE IF NEEDED):
+############################################
+1) Please add a Check Box labled "PARTS ONLY" under Branch Information Window (Branch2.tif)
+***30 minutes
+***DONE
+
+
+2) Please add "Mobile Number" to T-Rep and S-Rep Information Window. (S-Rep1.tif)
+***15 minutes
+***DONE
+
+
+3) I have one another request. I believe in my first intial bug/request report, I ask if it were possible when a new distributor 
+is added with all information, if it could automatically be added to the branch location area. This would save a step for data entry 
+because about 70% of main distributors can sell and ultimate are their own branch.This would eliminate adding a new distributor and 
+then adding the same information to the branch area.
+It could also be done on after the confirmation save window, in a window that might ask "Will this be a Selling Location?" 
+If  "Yes" add to branch distributor, if no do not. I would prefer a window question then automatically done. I do relize this 
+may also add some time to invoice however, a little billed time of  yours could save hours of repetive work for Laurie. Please 
+let me know what time this would take.
+***10 minutes
+***DONE
+
+4) When pressing save button can we get a small confirmation window saying "Data Saved".
+***5 minutes
+***DONE
+
+
+
+5)  CHANGE ALL TEXT INSTANCES:
+------------------------------------------
+BRANCH LOCATIONS  -----  to  ----->  SALES LOCATIONS
+BRANCH  -----  to  ----->  SALES LOCATIONS
+BRANCH DISTRIBUTOR LIST  -----  to  ----->  DISTRIBUTOR SALES LOCATIONS LIST
+ADD BRANCH  -----  to  ----->  ADD LOCATION
+BRANCH INFORMATION  -----  to  ----->  SALES LOCATION INFORMATION
+--I know this will take some time and cost a little. However, it was just decided on today that this should be how it is displayed. As far as root table information on the database it can still use the word branch such as BRANCH NAME.
+***10 minutes
+***DONE
+
+
+
+6) Can we add the T-Rep and the S-Rep buttons to the Main Distributor List Window. (s-rep.tif) 
+Then if you click on the T-Rep or S-Rep link from the Main Distributor List window the association 
+boxes are hidden just the edit and delete buttons are shown. (s-rep2.tif)
+***30 minutes
+***DONE
+
+
+7) When navigating this way: Main Distributor List / Distributor Information/ Branch Distributor List, please 
+hide the "Save" button from the "Branch Distributor List" window (branch_list.tif). 
+Keep the "Save" button when navigating this way: Main Distributor List / Territory / Counties/ Branch Distributor List
+***5 minutes
+***DONE
+
+
+8) When navigating this way: Main Distributor List / Territory, please hide the "Back" button from the "Territory" window (back2.tif). 
+When navigating this way: Main Distributor List / Distributor Information/ Territory, please keep the "Back" button in 
+"Territory" window (back.tif).
+***5 minutes
+***DONE
+
+9) A distributor should be able to have multiple email addresses.
+***45 minutes
+***DONE
+
+10) Under Distributor window(s) EMAIL: needs to be setup like CONTACT: We need a name: and email:. 
+Currently there is just a spot for multiple email addresses. (Refer to previous emails - distrib_info.tif)
+***Note: Alteration
+***20 minutes
+***DONE
+
+
+21) Please change all instances of "Billing Address" to "Mailing Address"including Sales (Branch) windows. (distrib_info.tif)
+***3 minutes
+***DONE
+
+25) Re-arrange window (contract2.tif) to (contract_final.tif)
+***2 minutes
+***DONE
+
+26) Change "Creation Date" to "CONTRACT DATE" (contract_final.tif)
+***1 minute
+***DONE
+
+
+27) Modify "Counties" window to display state also (contract3.tif)
+***7 minutes
+***DONE
+
+
+28) Please change all "Main Menu" buttons, except "Main Distributor List" window, to "Main List" 
+and change links to go to Main Distributor List. (main_menu_button1.tif, main_menu_button2.tif). 
+Example of work flow (main_list_example.pdf). All "Main List" buttons will go to Main Distributor List window. 
+There will only be 1 "Main Menu" button and it will be on the "Main Distributor List window".
+***5 minutes
+***DONE
+
+
+22) Please change "Territory" window (Territory1.tif) into (Territory2.tif) by adding "Distributor" for clarification.
+***5 minutes
+***DONE
+
+29) Please make it so the the State field can not be typed into just selected. Is this possible? When I tab to the field it highlights 
+but I thought I could select through them however it took what I typed and would ultimately give me an error if typed incorrectly.
+***20 minutes
+***DONE --> Custom Control created to allow typing into combobox and then AUto-Complete
+
+30) Please allow within all phone (not fax) areas a position for an exention number (Example - (309) 852-6216 Ext: 124)?
+***10 minutes
+***DONE
+
+31) Can we display what version of the app we running withing the Main Menu or start up spash screen?
+***10 minutes
+***DONE
+
+
+223 minutes

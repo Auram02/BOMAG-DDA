@@ -1,0 +1,19 @@
+BUGS / CORRECTIONS: APP VERSION 1.2.3
+===================================
+1.) T-Rep and S-Rep lists windows need scroll bars and to be sorted by name. (T-Rep_window)
+2.) Splash screen still has an edge. I'm attaching (splash_trans.tif) which uses a channel or mask for transparency. Can you use this.
+
+Report Issues:
+1.) Refer to (reports_window.tif) for text corrections.
+
+2.) Refer to (general_labels_window.tif) for corrections.
+
+3.) Quick Product View - Report is excellent. No borders are fine. Just a few small fixes and questions.
+        A.) In your formating can you BOLD the MAIN DISTRIBUTORS (Not locations)?
+        B.) Put BOMAG Americas Distributors on the same line as Catagories. Currently it is on line above. Can these also be bold?
+
+
+========================================
+PRIMARY CONTACT 
+========================================
+The primary contact checkbox should only be located within the Main Distributor Information window. There can only be 1 Primary Contact check box checked. This information will be used in the Contract Renewal Report. (Primary_Contract.tif)

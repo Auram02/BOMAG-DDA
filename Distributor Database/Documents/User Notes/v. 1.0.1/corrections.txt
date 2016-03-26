@@ -1,0 +1,46 @@
+--------------------------CLARITY------------------------------------
+- What is the very first screen displayed? Will there be other buttons within this screen? Is this the main screen were reports will be ran?
+
+- Service and Territory reps can be assigned multiple branches locations. However no 2 service or territory reps can be assigned to or occupy the same branch location. Does this make sense? I don't believe "clarity1.jpg" is correct. Please look at the picture and let me know if the association is based on the above rule.
+
+
+----------------------BUGS--------------------------------------------
+- Can't sort Main Distributor List window by pressing Catagory name - See bug1.jpg
+
+- Can't Select Existing Contract - See bug2A.jpg and bug2B.jpg
+
+- Can't Add new Product Categories - see bug3.jpg
+
+- When you select TERRITORY button from MAIN DISTIBUTOR LIST WINDOW it goes to TERRITORY WINDOW. But when you press the "Cancel" button it goes to an unfilled Distributor Information window instead of  MAIN DISTIBUTOR LIST WINDOW. However when you use the EDIT button in  MAIN DISTIBUTOR LIST WINDOW, then TERRITORY button, then the CANCEL button with TERRITORY WINDOW, it comes back to a filled in DISTRIBUTOR INFORMATION WINDOW.
+
+- I know you mentioned this but just making sure. Can't add branch Information - After I press the SAVE button in the BRANCH INFORMATION window and another window and says "This distributor does not contain any branches yet."
+
+- When pressing the ADD BRANCH button within the BRANCH DISTRIBUTOR LIST WINDOW, it goes to a different window than when the EDIT button within the BRANCH DISTRIBUTOR LIST WINDOW. The EDIT button goes to the correct window displaying all needed information.
+
+- That window also needs to say BRANCH DISTRIBUTOR LIST - see Branch_Info_window.jpg
+
+-Can't Add Territory Rep or Sevice Rep
+
+- There is no Edit or Remove button for Territory Rep or Service Rep List windows. See service_rep_list_window.jpg and territory_rep_list_window.jpg
+
+
+
+----------------------LOGIC-------------------------------------------
+SERVICE AND TERRITORY REP LIST WINDOWS:
+- If you remove a Service Rep or Territory Rep with REMOVE button can a prompt be made "Would you like to assign an existing Service Rep? Yes or No". If  "Yes" remove Service Rep then display current list with check boxes and let one be choosen. If "No" simply remove Service Rep. Can this be done for Territory Rep as well?
+
+
+MAIN DISTRIBUTOR and BRANCH INFORMATION WINDOWS:
+-Is it possible to have the "Name:" Field and "Title:" field under CONTACT to display the name that is selected within the box of names. This would allow someone to add corrections if needed. Example: If I accidentally put Press instead of President, I could highlight the name and the Name: field would fill in the name and title. I could then press "Remove" button, make the change in the "Title" or "Name" fields and press "Add" button.
+
+- Is it possible to have a button that you could use to copy billing information to shipping information if it is the same? See same_shipping.jpg
+
+
+MAIN DISTRIBUTOR LIST WINDOWS:
+- Can there be a seach function so it would narrow down  main distributors without having to scroll 250 names? See Search_Distributor_List.jpg
+
+
+WHOLE APPLICATION:
+- Lets change all buttons named "CANCEL" to "BACK"
+- Could the [X] at the top of each window be the same as the "BACK" button until the MAIN Window and the [x] means Close App?
+- Is it possible to center all windows when they display?  My mouse seams to be all over the place.

@@ -1,0 +1,37 @@
+BUGS / CORRECTIONS:
+
+View Contract button not working (view_button.tif)
+
+Delete Buttons not working (delete_button.tif)
+
+What does the green square in the check box mean? (green_box.tif)
+
+Noticed that when you double click a field within Main Distributor List the field becomes editable. This can not happen, editing should only take place using the Edit button within the "Distributor Information" window. (main_distributor_edit.tif)
+
+I removed all categories and added my own two new ones. Once I selected a contract, chose a new categorie and pressed next I get invalid Query! window (invalid query.tif)
+
+You can not assciate more than 1 T-Rep or more than 1 S-Rep to a branch location. You can not have multiple boxes checked  (T-Rep1.tif is incorrect) However you can associate more than 1 branch location to a  T-Rep or S-rep (T-Rep2.tif is also incorrect)
+
+When adding a branch to branch listing the Branch Name will always be the same as Main Distributor just different location. So Distributor Name within Branch Information window should only display Main Distributor name and not be editable.  (Branch1.tif)
+
+Please remove  "Distributor ID" and "Branch Name" Field from Distributor List. Replace with Branch Address Field. Add Main Distibutor Name Below "BRANCH DISTRIBUTOR LIST" Heading (branch_list.tif).  The reasoning for this is because a branch can not have a different name than the Main Distributor. So putting the Name under the BRANCH DISTRIBUTOR LIST would indicate all the branches associated with the main Distributor
+
+Remove NODE: from branch information Window. (Branch2.tif)
+
+Creation Date label and Modified Date label should be switched (date.tif)
+
+
+NEED TO IMPLEMENT STILL:
+
+How do you delete a contract? After clicking the view button?
+
+When pressing save button can we get a small confirmation window saying "Data Saved".
+
+When choosing a county that has been grayed out can it tell you the contract number and distributor associated with it. (county.tif)
+
+The county/Product are not working. Example: I created a new distributor and branch (timages1.tif). Then I created a new contract and selected "Compactors" and state "Illinios" (timages2.tif). Next I selected all of the state counties and saved the contract (timages3.tif). Then I choose Anderson Equipment and created a new contract. I selected "Compactors" and state "Illinois" (timages4.tif). Then in the next screen all items should be check but they were all open (timages5.tif). They should have been all checked because one of timages contracts associated the whole state of IL with "Compactors"
+
+NEEDS TO BE ADDED (CHARGE IF NEEDED):
+Please add a Check Box labled "PARTS ONLY" under Branch Information Window (Branch2.tif)
+Please add "Mobile Number" to T-Rep and S-Rep Information Window. (S-Rep1.tif)
+

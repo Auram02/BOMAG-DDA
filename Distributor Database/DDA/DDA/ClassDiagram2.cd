@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="DDA.DataAccess.Contract_da">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>DataAccess\Contract_da.cs</FileName>
+      <HashCode>AiAQIIIIIAAAAAAAACEQAAAAAAAAAAgEAAAAAAgABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="rptCIV_SingleItemData" targetNamespace="http://tempuri.org/rptCIV_SingleItemData.xsd" xmlns:mstns="http://tempuri.org/rptCIV_SingleItemData.xsd" xmlns="http://tempuri.org/rptCIV_SingleItemData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="rptCIV_SingleItemData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="rptCIV_SingleItemData" msprop:Generator_UserDSName="rptCIV_SingleItemData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtBranches" msprop:Generator_UserTableName="dtBranches" msprop:Generator_RowEvArgName="dtBranchesRowChangeEvent" msprop:Generator_TableVarName="tabledtBranches" msprop:Generator_TablePropName="dtBranches" msprop:Generator_RowDeletingName="dtBranchesRowDeleting" msprop:Generator_RowChangingName="dtBranchesRowChanging" msprop:Generator_RowDeletedName="dtBranchesRowDeleted" msprop:Generator_TableClassName="dtBranchesDataTable" msprop:Generator_RowChangedName="dtBranchesRowChanged" msprop:Generator_RowEvHandlerName="dtBranchesRowChangeEventHandler" msprop:Generator_RowClassName="dtBranchesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Branches" msprop:Generator_ColumnVarNameInTable="columnBranches" msprop:Generator_ColumnPropNameInRow="Branches" msprop:Generator_ColumnPropNameInTable="BranchesColumn" msprop:Generator_UserColumnName="Branches" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSingleData" msprop:Generator_TableClassName="dtSingleDataDataTable" msprop:Generator_RowEvArgName="dtSingleDataRowChangeEvent" msprop:Generator_TableVarName="tabledtSingleData" msprop:Generator_TablePropName="dtSingleData" msprop:Generator_RowDeletingName="dtSingleDataRowDeleting" msprop:Generator_UserTableName="dtSingleData" msprop:Generator_RowChangingName="dtSingleDataRowChanging" msprop:Generator_RowDeletedName="dtSingleDataRowDeleted" msprop:Generator_RowChangedName="dtSingleDataRowChanged" msprop:Generator_RowEvHandlerName="dtSingleDataRowChangeEventHandler" msprop:Generator_RowClassName="dtSingleDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContractNumber" msprop:Generator_ColumnVarNameInTable="columnContractNumber" msprop:Generator_ColumnPropNameInRow="ContractNumber" msprop:Generator_ColumnPropNameInTable="ContractNumberColumn" msprop:Generator_UserColumnName="ContractNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="DistributorName" msprop:Generator_ColumnVarNameInTable="columnDistributorName" msprop:Generator_ColumnPropNameInRow="DistributorName" msprop:Generator_ColumnPropNameInTable="DistributorNameColumn" msprop:Generator_UserColumnName="DistributorName" type="xs:string" minOccurs="0" />
+              <xs:element name="ModifiedDate" msprop:Generator_ColumnVarNameInTable="columnModifiedDate" msprop:Generator_ColumnPropNameInRow="ModifiedDate" msprop:Generator_ColumnPropNameInTable="ModifiedDateColumn" msprop:Generator_UserColumnName="ModifiedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ContractDate" msprop:Generator_ColumnVarNameInTable="columnContractDate" msprop:Generator_ColumnPropNameInRow="ContractDate" msprop:Generator_ColumnPropNameInTable="ContractDateColumn" msprop:Generator_UserColumnName="ContractDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ChildContractNumber" msprop:Generator_ColumnVarNameInTable="columnChildContractNumber" msprop:Generator_ColumnPropNameInRow="ChildContractNumber" msprop:Generator_ColumnPropNameInTable="ChildContractNumberColumn" msprop:Generator_UserColumnName="ChildContractNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCategory" msprop:Generator_TableClassName="dtCategoryDataTable" msprop:Generator_RowEvArgName="dtCategoryRowChangeEvent" msprop:Generator_TableVarName="tabledtCategory" msprop:Generator_TablePropName="dtCategory" msprop:Generator_RowDeletingName="dtCategoryRowDeleting" msprop:Generator_UserTableName="dtCategory" msprop:Generator_RowChangingName="dtCategoryRowChanging" msprop:Generator_RowDeletedName="dtCategoryRowDeleted" msprop:Generator_RowChangedName="dtCategoryRowChanged" msprop:Generator_RowEvHandlerName="dtCategoryRowChangeEventHandler" msprop:Generator_RowClassName="dtCategoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtState" msprop:Generator_TableClassName="dtStateDataTable" msprop:Generator_RowEvArgName="dtStateRowChangeEvent" msprop:Generator_TableVarName="tabledtState" msprop:Generator_TablePropName="dtState" msprop:Generator_RowDeletingName="dtStateRowDeleting" msprop:Generator_UserTableName="dtState" msprop:Generator_RowChangingName="dtStateRowChanging" msprop:Generator_RowDeletedName="dtStateRowDeleted" msprop:Generator_RowChangedName="dtStateRowChanged" msprop:Generator_RowEvHandlerName="dtStateRowChangeEventHandler" msprop:Generator_RowClassName="dtStateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StateName" msprop:Generator_ColumnVarNameInTable="columnStateName" msprop:Generator_ColumnPropNameInRow="StateName" msprop:Generator_ColumnPropNameInTable="StateNameColumn" msprop:Generator_UserColumnName="StateName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtCounty" msprop:Generator_TableClassName="dtCountyDataTable" msprop:Generator_RowEvArgName="dtCountyRowChangeEvent" msprop:Generator_TableVarName="tabledtCounty" msprop:Generator_TablePropName="dtCounty" msprop:Generator_RowDeletingName="dtCountyRowDeleting" msprop:Generator_UserTableName="dtCounty" msprop:Generator_RowChangingName="dtCountyRowChanging" msprop:Generator_RowDeletedName="dtCountyRowDeleted" msprop:Generator_RowChangedName="dtCountyRowChanged" msprop:Generator_RowEvHandlerName="dtCountyRowChangeEventHandler" msprop:Generator_RowClassName="dtCountyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CountyName" msprop:Generator_ColumnVarNameInTable="columnCountyName" msprop:Generator_ColumnPropNameInRow="CountyName" msprop:Generator_ColumnPropNameInTable="CountyNameColumn" msprop:Generator_UserColumnName="CountyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtChildCategories" msprop:Generator_TableClassName="dtChildCategoriesDataTable" msprop:Generator_TableVarName="tabledtChildCategories" msprop:Generator_TablePropName="dtChildCategories" msprop:Generator_RowDeletingName="dtChildCategoriesRowDeleting" msprop:Generator_UserTableName="dtChildCategories" msprop:Generator_RowChangingName="dtChildCategoriesRowChanging" msprop:Generator_RowEvHandlerName="dtChildCategoriesRowChangeEventHandler" msprop:Generator_RowDeletedName="dtChildCategoriesRowDeleted" msprop:Generator_RowEvArgName="dtChildCategoriesRowChangeEvent" msprop:Generator_RowChangedName="dtChildCategoriesRowChanged" msprop:Generator_RowClassName="dtChildCategoriesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" msprop:Generator_UserColumnName="Category" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+BUGS:
+
+Go to T-REP or S-Rep information Window. The problem is that the State does not have a list and you have to type it in. Since it is the State Table, if you type the state incorrectly or not at all you receive the following error (adding_T-Rep.tif)
+
+-----------------------
+
+Under Counties Window. Select all or Deselect all does not pompt you if a check box is greyed out. However if you select the grayed out box by itself than a prompt. (single.tif, select.tif, deselect.tif).
+
+Also if no counties are selected (deselect.tif) and you press the "Next" button and then try "Save" button and error message occurs(no_counties_selected.tif)
+
+-----------------------
+
+There will never be more the 1 main distributor to a contract. So you can delete extra space in the Contract Window. (contract_info_window.tif)
+
+-----------------------
+
+Go to BRANCH INFORMATION window or DISTRIBUTOR INFORMATION window. If you double click contact to update information, then  remove all information in the list box  while in Update Mode, then click update the resulting error occures. (contact_error.tif)
+
+-----------------------
+
+CHANGE ALL TEXT INSTANCES:
+------------------------------------------
+BRANCH LOCATIONS  -----  to  ----->  SALES LOCATIONS
+BRANCH  -----  to  ----->  SALES LOCATIONS
+BRANCH DISTRIBUTOR LIST  -----  to  ----->  DISTRIBUTOR SALES LOCATIONS LIST
+ADD BRANCH  -----  to  ----->  ADD LOCATION
+BRANCH INFORMATION  -----  to  ----->  SALES LOCATION INFORMATION
+
+I know this will take some time and cost a little. However, it was just decided on today that this should be how it is displayed. As far as root table information on the database it can still use the word branch such as BRANCH NAME.
+
+-----------------------
+
+ADDED FUNCTION:
+
+I have one another request. I believe in my first intial bug/request report, I ask if it were possible when a new distributor is added with all information, if it could automatically be added to the branch location area. This would save a step for data entry because about 70% of main distributors can sell and ultimate are their own branch.This would eliminate adding a new distributor and then adding the same information to the branch area.
+
+It could also be done on after the confirmation save window, in a window that might ask "Will this be a Selling Location?" If  "Yes" add to branch distributor, if no do not. I would prefer a window question then automatically done. I do relize this may also add some time to invoice however, a little billed time of  yours could save hours of repetive work for Laurie. Please let me know what time this would take.
+
+Also for your final invoice please keep track of items that arose outside our scope of contract so that I can back up why we are paying a little more for added work.

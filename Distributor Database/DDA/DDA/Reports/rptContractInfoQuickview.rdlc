@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>d7ef0124-bb2f-4211-b471-797b29b03b17</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>1in</BottomMargin>
+  <RightMargin>1in</RightMargin>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Textbox Name="ContractDate">
+        <Left>1.75in</Left>
+        <Top>2.875in</Top>
+        <rd:DefaultName>ContractDate</rd:DefaultName>
+        <ZIndex>15</ZIndex>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!ContractDate.Value, "rptCIV_SingleItemData_dtSingleData")</Value>
+      </Textbox>
+      <Textbox Name="ModifiedDate">
+        <Left>1.75in</Left>
+        <Top>3.25in</Top>
+        <rd:DefaultName>ModifiedDate</rd:DefaultName>
+        <ZIndex>14</ZIndex>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!ModifiedDate.Value, "rptCIV_SingleItemData_dtSingleData")</Value>
+      </Textbox>
+      <List Name="list4">
+        <Left>1.75in</Left>
+        <ReportItems>
+          <Textbox Name="CountyName">
+            <rd:DefaultName>CountyName</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!CountyName.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>rptCIV_SingleItemData_dtCounty</DataSetName>
+        <Top>2.375in</Top>
+        <ZIndex>13</ZIndex>
+        <Width>4.25in</Width>
+        <DataElementName>CountyName</DataElementName>
+        <Height>0.25in</Height>
+      </List>
+      <List Name="list3">
+        <Left>1.75in</Left>
+        <ReportItems>
+          <Textbox Name="StateName">
+            <rd:DefaultName>StateName</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!StateName.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>rptCIV_SingleItemData_dtState</DataSetName>
+        <Top>2in</Top>
+        <ZIndex>12</ZIndex>
+        <Width>4.25in</Width>
+        <Height>0.25in</Height>
+      </List>
+      <Textbox Name="textbox7">
+        <Left>0.125in</Left>
+        <Top>3.25in</Top>
+        <ZIndex>11</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>MODIFIED DATE:</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Left>0.125in</Left>
+        <Top>2.875in</Top>
+        <ZIndex>10</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>CONTRACT DATE:</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Left>0.125in</Left>
+        <Top>2.375in</Top>
+        <ZIndex>9</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>COUNTY:</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Left>0.125in</Left>
+        <Top>2in</Top>
+        <ZIndex>8</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>STATE:</Value>
+      </Textbox>
+      <List Name="list2">
+        <Left>1.75in</Left>
+        <ReportItems>
+          <Textbox Name="Category">
+            <rd:DefaultName>Category</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!Category.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>rptCIV_SingleItemData_dtCategory</DataSetName>
+        <Top>1.625in</Top>
+        <ZIndex>7</ZIndex>
+        <Width>4.25in</Width>
+        <Height>0.25in</Height>
+      </List>
+      <Textbox Name="textbox4">
+        <Left>0.125in</Left>
+        <Top>1.625in</Top>
+        <ZIndex>6</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>CATEGORY:</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>0.125in</Left>
+        <Top>1.25in</Top>
+        <ZIndex>5</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>SALES LOCATION:</Value>
+      </Textbox>
+      <List Name="list1">
+        <Left>1.75in</Left>
+        <ReportItems>
+          <Textbox Name="Branches">
+            <rd:DefaultName>Branches</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!Branches.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>rptCIV_SingleItemData_dtBranches</DataSetName>
+        <Top>1.25in</Top>
+        <ZIndex>4</ZIndex>
+        <Width>4.25in</Width>
+        <Height>0.25in</Height>
+      </List>
+      <Textbox Name="DistributorName">
+        <Left>1.75in</Left>
+        <Top>0.625in</Top>
+        <rd:DefaultName>DistributorName</rd:DefaultName>
+        <ZIndex>3</ZIndex>
+        <Width>4.25in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!DistributorName.Value, "rptCIV_SingleItemData_dtSingleData")</Value>
+      </Textbox>
+      <Textbox Name="ContractNumber">
+        <Left>1.75in</Left>
+        <Top>0.25in</Top>
+        <rd:DefaultName>ContractNumber</rd:DefaultName>
+        <ZIndex>2</ZIndex>
+        <Width>4.25in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!ContractNumber.Value, "rptCIV_SingleItemData_dtSingleData")</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Left>0.125in</Left>
+        <Top>0.625in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>DISTRIBUTOR NAME:</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Left>0.125in</Left>
+        <Top>0.25in</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>CONTRACT #:</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>3.625in</Height>
+  </Body>
+  <rd:ReportID>df2bf6ef-bc3d-43c1-876a-ec81e9eb6488</rd:ReportID>
+  <LeftMargin>1in</LeftMargin>
+  <DataSets>
+    <DataSet Name="rptCIV_SingleItemData_dtBranches">
+      <rd:DataSetInfo>
+        <rd:DataSetName>rptCIV_SingleItemData</rd:DataSetName>
+        <rd:TableName>dtBranches</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="Branches">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Branches</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="rptCIV_SingleItemData_dtSingleData">
+      <rd:DataSetInfo>
+        <rd:DataSetName>rptCIV_SingleItemData</rd:DataSetName>
+        <rd:TableName>dtSingleData</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="ContractNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ContractNumber</DataField>
+        </Field>
+        <Field Name="DistributorName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DistributorName</DataField>
+        </Field>
+        <Field Name="ModifiedDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ModifiedDate</DataField>
+        </Field>
+        <Field Name="ContractDate">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ContractDate</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="rptCIV_SingleItemData_dtCategory">
+      <rd:DataSetInfo>
+        <rd:DataSetName>rptCIV_SingleItemData</rd:DataSetName>
+        <rd:TableName>dtCategory</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="Category">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Category</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="rptCIV_SingleItemData_dtState">
+      <rd:DataSetInfo>
+        <rd:DataSetName>rptCIV_SingleItemData</rd:DataSetName>
+        <rd:TableName>dtState</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="StateName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>StateName</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="rptCIV_SingleItemData_dtCounty">
+      <rd:DataSetInfo>
+        <rd:DataSetName>rptCIV_SingleItemData</rd:DataSetName>
+        <rd:TableName>dtCounty</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="CountyName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CountyName</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>8.375in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

@@ -1,0 +1,11 @@
+BUGS / CORRECTIONS: APP VERSION 1.1.0
+===================================
+Please remove RepID from window. (s-rep.tif)
+If no phone is within information window the email address or physical address will appear in the phone column of the T-Rep / S-Rep and Sales Locations list windows. (t-rep_s-rep.tif, distrib_list.tif)
+*** MAJOR BUG**** None of the states have counties to check off - no counties list. (county_table.tif)
+
+ADDITION
+===================
+Please allow within all phone (not fax) areas a position for an exention number (Example - (309) 852-6216 Ext: 124)?
+
+Can we display what version of the app we running withing the Main Menu or start up spash screen?

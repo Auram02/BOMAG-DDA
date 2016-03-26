@@ -1,0 +1,8 @@
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\bin\x86\Debug\DataLogic.exe
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\bin\x86\Debug\DataLogic.pdb
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\bin\x86\Debug\DataLogic.xml
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.Resources.resources
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.vbproj.GenerateResource.Cache
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.exe
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.xml
+C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.pdb

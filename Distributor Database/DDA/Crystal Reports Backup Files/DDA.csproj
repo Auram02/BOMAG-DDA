@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB0CB6C0-5762-47B4-80A4-5FF5FB3393CD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDA</RootNamespace>
+    <AssemblyName>DDA</AssemblyName>
+    <StartupObject>DDA.Program</StartupObject>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>DTM.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>0.1.1.1</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Interop.Dymo, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\References\Interop.Dymo.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.StdType, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\References\Interop.StdType.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=3.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\References\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\..\..\..\References\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PdfSharp, Version=0.9.653.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\References\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCompleteCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteCheckBox.Designer.cs">
+      <DependentUpon>AutoCompleteCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLogic\InitializeProgram.cs" />
+    <Compile Include="CustomControl1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControl1.Designer.cs">
+      <DependentUpon>CustomControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Category_da.cs" />
+    <Compile Include="DataAccess\Config.cs" />
+    <Compile Include="DataAccess\Contract_da.cs" />
+    <Compile Include="DataAccess\DataViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataAccess\Distributor_da.cs" />
+    <Compile Include="DataAccess\Location_da.cs" />
+    <Compile Include="DataAccess\Representative_da.cs" />
+    <Compile Include="DataAccess\SplitCounty_da.cs" />
+    <Compile Include="DataAccess\User_da.cs" />
+    <Compile Include="DataObjects\AppData.cs" />
+    <Compile Include="DataObjects\Contract.cs" />
+    <Compile Include="DataObjects\Distributor.cs" />
+    <Compile Include="DataObjects\ObjectArray.cs" />
+    <Compile Include="DataObjects\Reports.cs" />
+    <Compile Include="DataObjects\Representative.cs" />
+    <Compile Include="Interfaces\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmContractNumberLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmContractNumberLabel.Designer.cs">
+      <DependentUpon>frmContractNumberLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmDatabaseLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmDatabaseLocation.Designer.cs">
+      <DependentUpon>frmDatabaseLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmFullContractReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmFullContractReport.Designer.cs">
+      <DependentUpon>frmFullContractReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmFullContractReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmFullContractReportViewer.Designer.cs">
+      <DependentUpon>frmFullContractReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmLabelReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmLabelReports.Designer.cs">
+      <DependentUpon>frmLabelReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmManageCountyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmManageCountyList.Designer.cs">
+      <DependentUpon>frmManageCountyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmContractInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmContractInformation.Designer.cs">
+      <DependentUpon>frmContractInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmCounties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmCounties.Designer.cs">
+      <DependentUpon>frmCounties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmDistributorBranchList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmDistributorBranchList.Designer.cs">
+      <DependentUpon>frmDistributorBranchList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmDistributorInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmDistributorInformation.Designer.cs">
+      <DependentUpon>frmDistributorInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmDistributorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmDistributorList.Designer.cs">
+      <DependentUpon>frmDistributorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmManageCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmManageCategories.Designer.cs">
+      <DependentUpon>frmManageCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmManageStates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmManageStates.Designer.cs">
+      <DependentUpon>frmManageStates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmRepList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmRepList.Designer.cs">
+      <DependentUpon>frmRepList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmReports.Designer.cs">
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmServiceRepInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmServiceRepInformation.Designer.cs">
+      <DependentUpon>frmServiceRepInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmServiceRepList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmServiceRepList.Designer.cs">
+      <DependentUpon>frmServiceRepList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmTerritory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmTerritory.Designer.cs">
+      <DependentUpon>frmTerritory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmTerritoryRepInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmTerritoryRepInformation.Designer.cs">
+      <DependentUpon>frmTerritoryRepInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmTerritoryRepList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmTerritoryRepList.Designer.cs">
+      <DependentUpon>frmTerritoryRepList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmUserManagement.Designer.cs">
+      <DependentUpon>frmUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\frmViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\frmViewReport.Designer.cs">
+      <DependentUpon>frmViewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaces\frmAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmContractNumberLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContractNumberLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmDatabaseLocation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDatabaseLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmFullContractReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFullContractReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmFullContractReportViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFullContractReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmLabelReports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLabelReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmManageCountyList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmManageCountyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmContractInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmContractInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmCounties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCounties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmDistributorBranchList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDistributorBranchList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmDistributorInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDistributorInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmDistributorList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDistributorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmManageCategories.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmManageStates.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmManageStates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmRepList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmReports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmServiceRepInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmServiceRepInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmServiceRepList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmServiceRepList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmSplash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmTerritory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTerritory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmTerritoryRepInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTerritoryRepInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmTerritoryRepList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmTerritoryRepList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmUserManagement.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\frmViewReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmViewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptContractInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptContractInfo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptContractInfoQuickview.rdlc" />
+    <EmbeddedResource Include="Reports\rptFullContract.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFullContract.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptFullContractReport.rdlc" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\rptContractInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptContractInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptFullContract.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFullContract.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Datasources\rptCIV_SingleItemData.cs">
+      <DependentUpon>rptCIV_SingleItemData.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Datasources\rptCIV_SingleItemData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCIV_SingleItemData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Datasources\rptFCR.cs">
+      <DependentUpon>rptFCR.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report_Datasources\rptFCR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFCR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SplitMergeLibrary\PdfFile.cs" />
+    <Compile Include="SplitMergeLibrary\PdfFileObject.cs" />
+    <Compile Include="SplitMergeLibrary\PdfFileStreamObject.cs" />
+    <Compile Include="SplitMergeLibrary\PdfObjectType.cs" />
+    <Compile Include="SplitMergeLibrary\PdfSplitter.cs" />
+    <Compile Include="SplitMergeLibrary\PdfSplitterMerger.cs" />
+    <Compile Include="SplitMergeLibrary\ProjectPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DTM.ico" />
+    <Content Include="Junk\Notes.txt" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Report_Datasources\rptCIV_SingleItemData.xsc">
+      <DependentUpon>rptCIV_SingleItemData.xsd</DependentUpon>
+    </None>
+    <None Include="Report_Datasources\rptCIV_SingleItemData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptCIV_SingleItemData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report_Datasources\rptCIV_SingleItemData.xss">
+      <DependentUpon>rptCIV_SingleItemData.xsd</DependentUpon>
+    </None>
+    <None Include="Report_Datasources\rptFCR.xsc">
+      <DependentUpon>rptFCR.xsd</DependentUpon>
+    </None>
+    <None Include="Report_Datasources\rptFCR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>rptFCR.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report_Datasources\rptFCR.xss">
+      <DependentUpon>rptFCR.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\splash_trans.png" />
+    <None Include="Resources\main_screen_logo.png" />
+    <None Include="Resources\splash.png" />
+    <None Include="Resources\splash_32bit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataLogic\DataLogic.vbproj">
+      <Project>{25D4366A-C71E-4506-9571-F5AE6BA54DF9}</Project>
+      <Name>DataLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

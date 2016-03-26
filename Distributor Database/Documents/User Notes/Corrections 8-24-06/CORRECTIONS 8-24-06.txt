@@ -1,0 +1,7 @@
+BUGS / CORRECTIONS:
+===================================
+The first login screen does not allow a user to exit application from either the "Cancel" button or the [x] button.
+
+Main Distibutor list -->Choose any distibutor and Territory Button -->pick a contract or new anc choose categories and state -->Choose any county available --> Now add a location --> Fill out form and save --> now choose T-Rep or S-Rep. The problem is there is no back button just main list so you can finish modifing the contract.
+
+Sales location window if you don't fill in Zip code you get this error. (sales_location.tif)

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DDA.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Center" Type="System.Drawing.Point" Scope="Application">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="DDA_com_findbomag_www_MapReportService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.findbomag.com/admin/WebServices/MapReportService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
