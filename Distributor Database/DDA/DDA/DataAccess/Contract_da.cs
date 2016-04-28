@@ -962,7 +962,9 @@ namespace DDA.DataAccess
                 UpdateSalesLocations(childContractID);
             
             // update territoryOverlapContract
-            string territoryOverlapResult = UpdateTerritoryOverlapContracts(DDA.DataObjects.AppData.DistributorID);
+            string territoryOverlapResult = "";
+
+            territoryOverlapResult = UpdateTerritoryOverlapContracts(DDA.DataObjects.AppData.DistributorID);
 
             contractDate = DDA.DataObjects.AppData.CurrentContract.ContractDate;
             int autoValue = 0;
@@ -994,13 +996,20 @@ namespace DDA.DataAccess
             // do a delete first, then an insert
             sql = "DELETE FROM ContractCounty WHERE fk_ContractID = " + contractID + "";
             DataLogic.DBA.DataLogic.Update(sql);
-
-            for (i = 0; i < DDA.DataObjects.AppData.CurrentContract.Counties.Count; i++)
+            try
             {
-                // Do the insert
-                sql = "INSERT INTO ContractCounty VALUES ('" + DDA.DataObjects.AppData.CurrentContract.Counties[i].ToString() + "','" + contractID + "')";
-                DataLogic.DBA.DataLogic.Update(sql);
 
+                for (i = 0; i < DDA.DataObjects.AppData.CurrentContract.Counties.Count; i++)
+                {
+                    // Do the insert
+                    sql = "INSERT INTO ContractCounty VALUES ('" + DDA.DataObjects.AppData.CurrentContract.Counties[i].ToString() + "','" + contractID + "')";
+                    DataLogic.DBA.DataLogic.Update(sql);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                string message = ex.Message;
             }
 
             sql = "UPDATE Contract SET ModifyDate = '" + DDA.DataObjects.AppData.CurrentContract.ModifyDate + "' WHERE ContractID = " + contractID;
@@ -1049,7 +1058,7 @@ namespace DDA.DataAccess
             DataSet ds = new DataSet();
             string sql;
 
-            sql = "SELECT Contract.ContractID, ContractNumber FROM Contract, ContractCategory, Category ";
+            sql = "SELECT Contract.ContractID, ContractNumber, IsAuto FROM Contract, ContractCategory, Category ";
             sql += " WHERE ContractCategory.fk_ContractID = Contract.ContractID ";
             sql += " AND Category.CategoryID = ContractCategory.fk_categoryID ";
             sql += " AND Contract.MainDistributorID = '" + distributorId + "'";
@@ -1097,8 +1106,12 @@ namespace DDA.DataAccess
                     if (territoryOverlapContractIdList.Length > 0)
                         territoryOverlapContractIdList += ",";
 
-                    territoryOverlapContractIdList += dr["ContractID"].ToString();
+                    if (dr["IsAuto"].ToString() == "True")
+                        territoryOverlapContractIdList += dr["ContractID"].ToString();
                 }
+
+                if (territoryOverlapContractIdList.Length == 0)
+                    territoryOverlapContractIdList = "999999999";
 
                 sql = "SELECT DISTINCT CountyID, ContractNumber FROM County, ContractCounty, Contract, ContractCategory, Category  ";
                 sql += " WHERE ContractCounty.fk_CountyID = County.CountyID";
@@ -1141,11 +1154,6 @@ namespace DDA.DataAccess
                 }
 
                 
-                sql = "DELETE FROM ContractDistributor WHERE fk_ContractID IN (" + territoryOverlapContractIdList + ")";
-
-                DataLogic.DBA.DataLogic.Update(sql);
-
-
                 try
                 {
 
@@ -1163,6 +1171,10 @@ namespace DDA.DataAccess
                            " AND ContractNumber NOT LIKE 'TO%' ";
 
                         DataSet dsParentCounty = DataLogic.DBA.DataLogic.Read(sql);
+
+                        sql = "DELETE FROM ContractDistributor WHERE fk_ContractID IN (" + territoryOverlapContractIdList + ")";
+
+                        DataLogic.DBA.DataLogic.Update(sql);
 
                         foreach (DataRow drParCounty in dsParentCounty.Tables[0].Rows)
                         {

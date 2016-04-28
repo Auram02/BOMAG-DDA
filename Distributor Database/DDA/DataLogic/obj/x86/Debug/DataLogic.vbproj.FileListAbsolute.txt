@@ -6,3 +6,13 @@ C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\De
 C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.exe
 C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.xml
 C:\Development\Code\Bomag Americas\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.pdb
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\bin\x86\Debug\DataLogic.exe
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\bin\x86\Debug\DataLogic.pdb
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\bin\x86\Debug\DataLogic.xml
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.Resources.resources
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.exe
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.xml
+C:\Development\BOMAG-DDA\Distributor Database\DDA\DataLogic\obj\x86\Debug\DataLogic.pdb

@@ -7,10 +7,10 @@ namespace DDA.DataAccess
 {
     class User_da
     {
-        public static bool DoLogin(string login, string password, ref bool isAdmin)
+        public static string DoLogin(string login, string password, ref bool isAdmin)
         {
-            bool result;
-            result = false;
+            string result;
+            result = "";
 
             DataSet dsUser;
             string sql;
@@ -30,12 +30,11 @@ namespace DDA.DataAccess
                     isAdmin = Convert.ToBoolean(dsUser.Tables[0].Rows[0]["Administrator"]);
                     DDA.DataObjects.AppData.UserIsAdmin = isAdmin;
                     DDA.DataObjects.AppData.UserName = login;
-                    result = true;
+                    
                 }
-            } catch {
-                result = false;
+            } catch (Exception ex) {
+                result = "Login Failed.  Error: " + ex.Message;
             }
-
 
             return result;
         }

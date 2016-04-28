@@ -1,5 +1,5 @@
 <configuration>
   <Settings>
-    <DatabasePath value="rawr">C:\Development\Code\Bomag Americas\Distributor Database\DDA\DDA\bin\Debug\Data\DDA.mdb</DatabasePath>
+    <DatabasePath value="rawr">C:\Program Files\Task Software\Distributor Database Application\Data\DDA.mdb</DatabasePath>
   </Settings>
 </configuration>

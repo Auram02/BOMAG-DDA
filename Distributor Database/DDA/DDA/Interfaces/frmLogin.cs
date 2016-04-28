@@ -30,11 +30,11 @@ namespace DDA.Interfaces
             bool isAdmin;
             isAdmin = false;
 
-            bool result;
+            string result;
             this.Close();
             result = DDA.DataAccess.User_da.DoLogin(txtLogin.Text, txtPassword.Text, ref isAdmin);
 
-            if (result == true)
+            if (result == "")
             {
                 DDA.DataObjects.AppData.IsLoggedIn = true;
                 
@@ -54,9 +54,9 @@ namespace DDA.Interfaces
                         db.CopyTo(dbLoc + ".bak", true);
 
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("An error has occurred while backing up DDA.mdb.  The original DDA.mdb file was not affected in any way.  Please contact the developer if this error continues to occur");
+                        MessageBox.Show("An error has occurred while backing up DDA.mdb.  The original DDA.mdb file was not affected in any way.  Please contact the developer if this error continues to occur.  Error: " + ex.Message);
                     }
                 }
 
@@ -66,7 +66,7 @@ namespace DDA.Interfaces
             else
             {
                 DDA.DataObjects.AppData.IsLoggedIn = false;
-                MessageBox.Show("Invalid Login or Password.  Please try to Login again.");
+                MessageBox.Show("Invalid Login or Password.  Please try to Login again." + Environment.NewLine + Environment.NewLine + "Connection Result: " + result + Environment.NewLine + Environment.NewLine + "Database Location: " + DataLogic.DataAccessVariables.database_location);
             }
         }
 
